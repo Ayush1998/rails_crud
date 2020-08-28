@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   # get 'students/edit'
   # get 'students/update'
   # get 'students/destroy'
+  root to: "students#index"
   resources :students
   resources :courses
   resources :enrollments, only: [:new, :create, :destroy]
