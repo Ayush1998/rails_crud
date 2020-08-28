@@ -7,7 +7,7 @@
 <%= button_to "Register Course", new_enrollment_path, method: :get%>
 <ul>
     <% @student.enrollments.each do |enrollment|%>
-        <li><%= enrollment.cource.name%></li>
+        <li><%= enrollment.course.name%></li>
         <%= button_to "Drop Enrollment", enrollment_path(enrollment), method: :delete%>
     <%end%>
 </ul>
