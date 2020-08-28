@@ -14,6 +14,7 @@ class StudentsController < ApplicationController
     else
       flash[:errors] = @student.errors.full_messages
       redirect_to new_student_path
+    end
   end
 
   def show
